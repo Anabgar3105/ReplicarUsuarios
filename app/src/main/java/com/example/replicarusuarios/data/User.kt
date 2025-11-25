@@ -4,7 +4,8 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class User(
-    val id: Int,
+    // Lo ponemos nullable (? = null) por si al crear uno nuevo aún no tiene ID.
+    val id: Int? = null,
     val firstname: String,
     val lastname: String,
     val age: Int,
@@ -16,5 +17,5 @@ data class User(
     val phone: String,
     val height: Int,
     val weight: Int,
-    val company: Object,
+    val company: Company? = null,
     )

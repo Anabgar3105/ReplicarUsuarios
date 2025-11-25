@@ -1,4 +1,6 @@
 package com.example.replicarusuarios.data
 
-class Company {
-}
+data class Company(
+    val name: String? = "",
+    val title: String? = ""
+)

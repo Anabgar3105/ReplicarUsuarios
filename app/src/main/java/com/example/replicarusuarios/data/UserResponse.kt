@@ -1,4 +1,9 @@
 package com.example.replicarusuarios.data
 
-class UserResponse {
-}
+import kotlinx.serialization.SerialName
+import kotlinx.serialization.Serializable
+
+@Serializable
+data class UserResponse(
+    @SerialName("users") val users: List<User>
+)
