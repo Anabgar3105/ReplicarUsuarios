@@ -6,16 +6,16 @@ import kotlinx.serialization.Serializable
 data class User(
     // Lo ponemos nullable (? = null) por si al crear uno nuevo aún no tiene ID.
     val id: Int? = null,
-    val firstname: String,
-    val lastname: String,
+    val firstName: String,
+    val lastName: String,
     val age: Int,
-    val email: Int,
+    val email: String,
     val image: String,
     val username: String,
     val password: String,
     val gender: String,
     val phone: String,
-    val height: Int,
-    val weight: Int,
+    val height: Double,
+    val weight: Double,
     val company: Company? = null,
     )
